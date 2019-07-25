@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: dev
+  labels: 
+    run: dev
+  name: backend-pod
+spec:
+  nodeSelector:
+    ssd: "true"
+  containers:
+  - image: centos
+    name: centos
+    stdin: true
+    tty: true
