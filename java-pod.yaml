@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-pod
+  labels:
+    app: front-end
+  namespace: dev
+spec:
+  containers:
+  - name: java
+    image: java
